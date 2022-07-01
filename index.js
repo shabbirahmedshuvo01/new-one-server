@@ -31,6 +31,8 @@ async function run() {
         })
 
 
+        // get from client side
+
         app.post('/task', async (req, res) => {
             const newTask = req.body;
             const result = await taskCollection.insertOne(newTask);
